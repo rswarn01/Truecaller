@@ -86,13 +86,13 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 
-4. # Create a superuser:
+4. **Create a superuser:**
 python manage.py createsuperuser
 
-5. # Populate the database with sample data:
+5. **Populate the database with sample data:**
 python manage.py populate_data
 
-6. # Run the development server:
+6. **Run the development server:**
 python manage.py runserver
 
 

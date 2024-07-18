@@ -44,7 +44,6 @@ URL: /api/users/register/
 Method: POST
 Payload:
 json
-Copy code
 {
   "phone_number": "1234567890",
   "name": "John Doe",
@@ -62,7 +61,6 @@ Payload:
 }
 Response:
 json
-Copy code
 {
   "token": "your-auth-token"
 }

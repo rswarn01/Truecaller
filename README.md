@@ -78,21 +78,21 @@ python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 
-# Install dependencies:
+2. # Install dependencies:
 pip install -r requirements.txt
 
 
-# Set up the database:
+3. # Set up the database:
 python manage.py makemigrations
 python manage.py migrate
 
-# Create a superuser:
+4. # Create a superuser:
 python manage.py createsuperuser
 
-# Populate the database with sample data:
+5. # Populate the database with sample data:
 python manage.py populate_data
 
-# Run the development server:
+6. # Run the development server:
 python manage.py runserver
 
 

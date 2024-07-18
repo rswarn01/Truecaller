@@ -78,26 +78,26 @@ python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 
-Install dependencies:
+# Install dependencies:
 pip install -r requirements.txt
 
 
-Set up the database:
+# Set up the database:
 python manage.py makemigrations
 python manage.py migrate
 
-Create a superuser:
+# Create a superuser:
 python manage.py createsuperuser
 
-Populate the database with sample data:
+# Populate the database with sample data:
 python manage.py populate_data
 
-Run the development server:
+# Run the development server:
 python manage.py runserver
 
 
-API Endpoints:
-User Registration
+# API Endpoints:
+# User Registration
 URL: /api/users/register/
 Method: POST
 Payload:
@@ -110,7 +110,7 @@ Copy code
 }
 
 
-User Login
+# User Login
 URL: /api/users/login/
 Method: POST
 Payload:
@@ -126,7 +126,7 @@ Copy code
 }
 
 
-Create Contact
+# Create Contact
 URL: /api/contacts/
 Method: POST
 Headers: Authorization: Token your-auth-token
@@ -144,7 +144,7 @@ Method: GET
 Headers: Authorization: Token your-auth-token
 
 
-Report Spam
+# Report Spam
 URL: /api/spam/
 Method: POST
 Headers: Authorization: Token your-auth-token
@@ -155,14 +155,14 @@ json
 }
 
 
-Search by Name
+# Search by Name
 URL: /api/search/name/
 Method: GET
 Headers: Authorization: Token your-auth-token
 Query Params: name=<search_query>
 
 
-Search by Phone Number
+# Search by Phone Number
 URL: /api/search/phone/
 Method: GET
 Headers: Authorization: Token your-auth-token

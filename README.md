@@ -1,4 +1,3 @@
-# Truecaller
 # Truecaller-like Django REST API
 
 This project implements a Django REST API similar to popular caller identification apps. The API allows users to register, manage their contacts, mark numbers as spam, and search for users or numbers in the global database.
@@ -12,88 +11,31 @@ This project implements a Django REST API similar to popular caller identificati
 - Search by name or phone number.
 - Token authentication for all endpoints.
 
-## Folder Structure
-
-truecaller/
-│
-├── manage.py
-├── truecaller/
-│ ├── init.py
-│ ├── settings.py
-│ ├── urls.py
-│ ├── wsgi.py
-│
-├── api/
-│ ├── init.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── models.py
-│ ├── serializers.py
-│ ├── urls.py
-│ ├── views.py
-│ ├── tests.py
-│
-├── users/
-│ ├── init.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── models.py
-│ ├── serializers.py
-│ ├── urls.py
-│ ├── views.py
-│ ├── tests.py
-│
-├── contacts/
-│ ├── init.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── models.py
-│ ├── serializers.py
-│ ├── urls.py
-│ ├── views.py
-│ ├── tests.py
-│
-└── spam/
-├── init.py
-├── admin.py
-├── apps.py
-├── models.py
-├── serializers.py
-├── urls.py
-├── views.py
-├── tests.py
-
-bash
-Copy code
-
 ## Setup Instructions
 
 1. **Clone the repository:**
+   git clone https://github.com/rswarn01/Truecaller.git
+   cd Truecaller
 
-git clone https://github.com/rswarn01/Truecaller.git
-cd Truecaller
+2. **Create a virtual environment:**
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
-Create a virtual environment:
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+3. **Install dependencies:**
+   pip install -r requirements.txt
 
+4. **Set up the database:**
+   python manage.py makemigrations
+   python manage.py migrate
 
-2. **Install dependencies:**
-pip install -r requirements.txt
+5. **Create a superuser:**
+   python manage.py createsuperuser
 
+6. **Populate the database with sample data:**
+    python manage.py populate_data
 
-3. **Set up the database:**
-python manage.py makemigrations
-python manage.py migrate
-
-4. **Create a superuser:**
-python manage.py createsuperuser
-
-5. **Populate the database with sample data:**
-python manage.py populate_data
-
-6. **Run the development server:**
-python manage.py runserver
+7. **Run the development server:**
+    python manage.py runserver
 
 
 # API Endpoints:

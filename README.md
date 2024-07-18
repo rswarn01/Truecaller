@@ -70,19 +70,19 @@ Copy code
 
 1. **Clone the repository:**
 
-git clone <repository-url>
-cd truecaller
+git clone https://github.com/rswarn01/Truecaller.git
+cd Truecaller
 
 Create a virtual environment:
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 
-2. # Install dependencies:
+2. **Install dependencies:**
 pip install -r requirements.txt
 
 
-3. # Set up the database:
+3. **Set up the database:**
 python manage.py makemigrations
 python manage.py migrate
 
